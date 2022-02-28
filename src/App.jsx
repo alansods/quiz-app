@@ -24,10 +24,14 @@ function App() {
 
   //inicia o quiz ao clicar em começar.
   const quizStartHandler = () => {
-    setStep(2);
-    interval = setInterval(() => {
-      setTime((prevTime) => prevTime + 1)
-    }, 1000)
+
+    if(userName.length > 2){
+      setStep(2);
+
+      interval = setInterval(() => {
+        setTime((prevTime) => prevTime + 1)
+      }, 1000)
+    }
   };
 
   const resetClickHandler = ()=> {

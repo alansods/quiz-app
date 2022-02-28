@@ -24,3 +24,8 @@ gap: 20px;
 .startButton{
   margin-top: 20px;
 }
+
+.startButtonDisabled{
+  margin-top: 20px;
+  cursor: not-allowed;
+}

@@ -19,7 +19,8 @@ export default function Start({ onQuizStart, userName, setUsername }) {
           <span className="checkmark"></span>
         </label>
       </div>
-      <button className={style.startButton} onClick={onQuizStart}>Começar</button>
+      {userName.length > 2 && <button className={style.startButton} onClick={onQuizStart}>Começar</button>}
+      {userName.length < 3 && <button className={style.startButtonDisabled} disabled onClick={onQuizStart}>Começar</button>}
     </div>
   );
 }

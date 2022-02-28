@@ -52,6 +52,10 @@ button:hover{
   background-color: rgb(92, 132, 255);
 }
 
+button:disabled{
+  background-color: #ccc;
+}
+
 h2{
   font-size: 1.4rem;
 }
