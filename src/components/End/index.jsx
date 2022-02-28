@@ -16,7 +16,7 @@ export default function End({
     let correct = 0
     results.forEach((result, index) => {
       if(result.a === data[index].correct_answer) {
-        console.log(data[index].correct_answer)
+        console.log(result.a)
         correct++
       }
     })
