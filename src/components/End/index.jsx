@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from "react"
 import style from "./end.module.css"
 import { formatTime } from "../../utils"
+import Lottie from 'react-lottie';
+import * as animationHappy from '../../lotties/happy.json'
+import * as animationSad from '../../lotties/sad.json'
+ 
 
 export default function End({
   results,
@@ -10,6 +14,25 @@ export default function End({
   time,
   numberOfQuestions,
 }) {
+
+  const defaultOptionsHappy = {
+    loop: true,
+    autoplay: true,
+    animationData: animationHappy,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+  
+  const defaultOptionsSad = {
+    loop: true,
+    autoplay: true,
+    animationData: animationSad,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   useEffect(()=> {
@@ -23,12 +46,13 @@ export default function End({
     setCorrectAnswers(correct)
     // eslint-disable-next-line
   },[])
+  
 
   return (
     <div className={style.end}>
       <div>
-      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_sgzw5ogf.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay>
-      </lottie-player>
+      {correctAnswers > 6 && <Lottie options={defaultOptionsHappy} height={110} width={110} />}
+      {correctAnswers < 7 && <Lottie options={defaultOptionsSad} height={80} width={80} />}
       </div>
       <div className={style.pontuacao}>
         <h3>Sua pontuação:</h3>
