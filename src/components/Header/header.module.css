@@ -15,3 +15,12 @@
 .logo{
   font-size: 1.2rem;
 }
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container svg{
+    margin-right: 5px;
+}

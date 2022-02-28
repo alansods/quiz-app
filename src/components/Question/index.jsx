@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import style from "./question.module.css";
+import { FaExclamationCircle } from 'react-icons/fa';
 
 export default function Question({
   data,
@@ -75,7 +76,7 @@ export default function Question({
           </label>
         ))}
       </div>
-      {error && <div className="error">{error}</div>}
+      {error && <div className={style.error}><FaExclamationCircle />{error}</div>}
       <button onClick={nextClickHandler}>Next</button>
     </div>
   );
