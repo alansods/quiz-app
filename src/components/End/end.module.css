@@ -1,0 +1,13 @@
+.end {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reiniciar{
+  background-color: crimson;
+}
+
+.reiniciar:hover{
+  background-color: rgb(252, 48, 89);
+}

@@ -33,14 +33,15 @@ export default function Question({
     if (selected === "") {
       return setError("Responda a questão para continuar.");
     }
+
     if (error) {
       setError("");
     }
-    onAnswerUpdate((prevState) => [
-      ...prevState,
-      { q: data.question, a: selected },
-    ]);
+
+    onAnswerUpdate(prevState => [...prevState,{ q: data.question, a: selected }]);
+
     setSelected("");
+
     if (activeQuestion < numberOfQuestions - 1) {
       onSetActiveQuestion(activeQuestion + 1);
     } else {
@@ -64,7 +65,7 @@ export default function Question({
                 <input
                   type="radio"
                   name="answerItem[1]"
-                  value={answerItem[1]}
+                  value={answerItem[0]}
                   onChange={changeHandler}
                   key={i}
                 />

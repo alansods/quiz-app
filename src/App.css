@@ -17,6 +17,7 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  /* min-height: 400px; */
 }
 
 @media(max-width:450px){
