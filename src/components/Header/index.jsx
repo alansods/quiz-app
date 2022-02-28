@@ -9,7 +9,7 @@ export default function Header({userName, step}) {
       </div>
       <div>
         {step === 1 && <div className={style.container}><FaUserAlt />Usuário</div>}
-        {step === 2 && <div className={style.container}><FaUserAlt />{userName}</div>}
+        {step === 2 | 4 && <div className={style.container}><FaUserAlt />{userName}</div>}
       </div>
     </header>
   );

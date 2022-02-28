@@ -41,6 +41,7 @@ function App() {
     setAnswers([])
     setStep(1)
     setTime(0)
+    setUsername('')
   }
 
   return (
