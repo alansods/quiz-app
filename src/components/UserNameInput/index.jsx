@@ -1,10 +1,6 @@
 import styles from './inputText.module.css'
 
-export default function UserNameInput({userName, setUsername}) {
-
-  function createuserName(e){
-    setUsername(e.target.value)
-  }
+export default function UserNameInput({userName, setUsername, onQuizStart}) {
 
   return (
     <div className={styles.container}>
@@ -12,7 +8,9 @@ export default function UserNameInput({userName, setUsername}) {
             type="text"
             placeholder="Digite seu nome"
             value={userName}
-            onChange={createuserName}
+            onChange={(e) => setUsername(e.target.value) }
+            onKeyPress={(e) => e.key === 'Enter' && onQuizStart()}
+            autoFocus 
           />
     </div>
   );

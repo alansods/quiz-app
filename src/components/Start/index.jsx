@@ -5,7 +5,7 @@ export default function Start({ onQuizStart, userName, setUsername }) {
   return (
     <div className={style.start}>
       <h3>Qual é seu nome?</h3>
-      <UserNameInput userName={userName} setUsername={setUsername} />
+      <UserNameInput userName={userName} setUsername={setUsername} onQuizStart={onQuizStart} />
       <h3>Dificuldade:</h3>
       <div className={style.containerDifficulty}>
         <label className="containerInput">
