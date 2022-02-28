@@ -10,6 +10,10 @@
   outline: 0;
 }
 
+::placeholder{
+  color: #ccc;
+}
+
 html, body, #root{
   height: 100%;
 }
@@ -53,7 +57,8 @@ button:hover{
 }
 
 button:disabled{
-  background-color: #ccc;
+  background-color: #eee;
+  color: #ccc;
 }
 
 h2{

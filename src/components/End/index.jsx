@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import style from "./end.module.css"
 import { formatTime } from "../../utils"
 import Lottie from 'react-lottie';

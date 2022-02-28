@@ -3,7 +3,9 @@ import Header from "./components/Header"
 import Start from "./components/Start"
 import Question from "./components/Question"
 import End from "./components/End"
+import Resultado from "./components/Resultado"
 import quizDataEasy from "./api/quizDataEasy.json"
+ 
 
 import React, { useEffect, useState } from "react"
 
@@ -35,7 +37,10 @@ function App() {
   };
 
   const resetClickHandler = ()=> {
-
+    setActiveQuestion(0)
+    setAnswers([])
+    setStep(1)
+    setTime(0)
   }
 
   return (
@@ -70,8 +75,14 @@ function App() {
               data = {quizDataEasy}
               numberOfQuestions = {quizDataEasy.length}
               onReset = {resetClickHandler}
-              onAnswersCheck = {() => {}}
+              onAnswersCheck = {() => setStep(4)}
               time = {time}
+              />}
+
+              {step === 4 && <Resultado
+              results = {answers}
+              data = {quizDataEasy}
+              onReset = {resetClickHandler}
               />}
           </div>
         </div>

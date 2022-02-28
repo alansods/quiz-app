@@ -1,0 +1,9 @@
+.resultado{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+.resultado li{
+  margin: 20px 0
+}
