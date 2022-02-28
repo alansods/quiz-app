@@ -1,0 +1,95 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.card{
+  width: 600px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content{
+  width: 100%;
+}
+
+.card-content .control{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.containerInput{
+  display: block;
+  position: relative;
+}
+
+.radio{
+  margin-top: 5px;
+}
+
+.radio input{
+  margin-right: 5px;
+}
+
+.containerInput input{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.containerInput:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+
+.containerInput input:checked ~ .checkmark{
+  background-color: royalblue;
+}
+
+.containerInput .checkmark::after{
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.containerInput input:checked ~ .checkmark::after{
+  display: block;
+}
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.error{
+  color: red;
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "id": 336,
+    "question": "Which of the following is not a valid comparison operator?",
+    "description": null,
+    "answers": {
+      "answer_a": "==",
+      "answer_b": "<>",
+      "answer_c": "<=>",
+      "answer_d": "!=",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 968,
+    "question": "Which description best fits a DaemonSet?",
+    "description": null,
+    "answers": {
+      "answer_a": "A way to run a copy of a pod on all or some nodes",
+      "answer_b": "A method to manage clusters of pods",
+      "answer_c": "A channel through which to pass information between two or more nodes",
+      "answer_d": "A system to connect nodes and pods",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 514,
+    "question": "What is the full form of HTTP?",
+    "description": null,
+    "answers": {
+      "answer_a": "Hyper text transfer package",
+      "answer_b": "Hyphenation text test program",
+      "answer_c": "Hyper text transfer protocol",
+      "answer_d": "none of the above",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "Code",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 471,
+    "question": "Apart from the <b> tag, what other Tag makes text bold ?",
+    "description": null,
+    "answers": {
+      "answer_a": "<emp>",
+      "answer_b": "<strong>",
+      "answer_c": "<fat>",
+      "answer_d": "<black>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "Code",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 25,
+    "question": "What are the most common Linux boot managers?",
+    "description": null,
+    "answers": {
+      "answer_a": "Bootmanager/Bootflag",
+      "answer_b": "Bootmand/MBR",
+      "answer_c": "LILO/GRUB",
+      "answer_d": "Bootd/init.d",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_c",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 931,
+    "question": "Which flag is used to specify the path to the configuration file in kube-proxy?",
+    "description": null,
+    "answers": {
+      "answer_a": "\u2013cluster-cidr string",
+      "answer_b": "\u2013config string",
+      "answer_c": "\u2013detect-local-mode LocalMode",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "Docker",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 339,
+    "question": "Which of the following are not Numeric column types?",
+    "description": null,
+    "answers": {
+      "answer_a": "BIGINT",
+      "answer_b": "LARGEINT",
+      "answer_c": "SMALLINT",
+      "answer_d": "DOUBLE",
+      "answer_e": "DECIMAL",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 754,
+    "question": "Which command will duplicate each line in a file?",
+    "description": null,
+    "answers": {
+      "answer_a": "sed 'p' < filename",
+      "answer_b": "sed 'd' < filename",
+      "answer_c": "cp 'p' < filename",
+      "answer_d": "cp 'd' < filename",
+      "answer_e": "cat 'p' < filename",
+      "answer_f": "cat 'd' < filename"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "BASH" }, { "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 3,
+    "question": "How to check the current disk usage on Linux?",
+    "description": "check current disk usage",
+    "answers": {
+      "answer_a": "df",
+      "answer_b": "usage",
+      "answer_c": "uptime",
+      "answer_d": "free",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "df shows you the current disk usage",
+    "tip": "df",
+    "tags": [{ "name": "Linux" }, { "name": "BASH" }, { "name": "PHP" }],
+    "category": "uncategorized",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 386,
+    "question": "The Function 'fetchrow_hashref()' returns reference to hash row values keyed by ______________",
+    "description": null,
+    "answers": {
+      "answer_a": "Row Name",
+      "answer_b": "Database Name",
+      "answer_c": "Table Name",
+      "answer_d": "Column Name",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }, { "name": "PHP" }],
+    "category": "SQL",
+    "difficulty": "Hard"
+  }
+]

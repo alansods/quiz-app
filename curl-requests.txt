@@ -1,0 +1,11 @@
+curl https://quizapi.io/api/v1/questions -G \
+-d apiKey=TYp5hZeYQ3lKNtEY20O1FTnO6KFpmkfW6N6QUwKg \
+-d limit=10 \
+-d difficulty=easy
+
+
+
+curl https://quizapi.io/api/v1/questions -G \
+-d apiKey=TYp5hZeYQ3lKNtEY20O1FTnO6KFpmkfW6N6QUwKg \
+-d limit=10 \
+-d difficulty=Hard

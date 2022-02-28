@@ -1,0 +1,282 @@
+[
+  {
+    "id": 425,
+    "question": "TCL is used for _______?",
+    "description": null,
+    "answers": {
+      "answer_a": "Control access to data stored in a database",
+      "answer_b": "Managing the changes made by DML statements",
+      "answer_c": "Defining database schema",
+      "answer_d": "None of the mentioned",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 398,
+    "question": "MySQL runs on which Operating Systems?",
+    "description": null,
+    "answers": {
+      "answer_a": "Unix And Linux Only",
+      "answer_b": "Windows only",
+      "answer_c": "Linux And Mac OS-X Only",
+      "answer_d": "Unix, Linux, Windows,Mac And Others",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 140,
+    "question": "What is the correct HTML for making a text area?",
+    "description": null,
+    "answers": {
+      "answer_a": "<input type=\"textbox\">",
+      "answer_b": "<textarea>",
+      "answer_c": "<input type=\"textarea\">",
+      "answer_d": "<textbox>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 676,
+    "question": "What is the login name of the administrator in Linux?",
+    "description": null,
+    "answers": {
+      "answer_a": "root",
+      "answer_b": "administrator",
+      "answer_c": "admin",
+      "answer_d": "All of the mentioned",
+      "answer_e": "None of the mentioned",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "BASH" }, { "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 197,
+    "question": "What is the prefix of WordPress tables by default?",
+    "description": null,
+    "answers": {
+      "answer_a": "wp_ default",
+      "answer_b": "wp_",
+      "answer_c": "wp_ in",
+      "answer_d": "_wp_",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "WordPress" }],
+    "category": "CMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 775,
+    "question": "Using which of the following way can you embed PHP code in an HTML page?",
+    "description": null,
+    "answers": {
+      "answer_a": "<?php PHP code goes here ?>",
+      "answer_b": "<?php PHP code goes here php?>",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 371,
+    "question": "Null is used as a place holder for optional fields",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 317,
+    "question": "How many Posts and Pages can you have?",
+    "description": null,
+    "answers": {
+      "answer_a": "I can have 100 posts and 100 pages",
+      "answer_b": "Depends on the theme I'm using.",
+      "answer_c": "There is no limit on the number of posts or pages you can have.",
+      "answer_d": "There is no limit on the number of posts but I can have only certain amount of pages.",
+      "answer_e": "Depending on your plan, you can have a different amount of pages and posts.",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "WordPress" }],
+    "category": "CMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 34,
+    "question": "Which command is used to create file archives in Linux?",
+    "description": null,
+    "answers": {
+      "answer_a": "arc",
+      "answer_b": "zip",
+      "answer_c": "ps",
+      "answer_d": "tar",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_d",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 537,
+    "question": "Which tag creates a check box for a form in HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "<checkbox>",
+      "answer_b": "<input checkbox>",
+      "answer_c": "<input=checkbox>",
+      "answer_d": "<input type=\"checkbox\">",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  }
+]
