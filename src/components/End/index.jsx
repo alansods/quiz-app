@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import style from "./end.module.css";
-import { formatTime } from "../../utils";
+import React, { useState, useRef, useEffect } from "react"
+import style from "./end.module.css"
+import { formatTime } from "../../utils"
 
 export default function End({
   results,
@@ -26,13 +26,17 @@ export default function End({
 
   return (
     <div className={style.end}>
+      <div>
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_sgzw5ogf.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay>
+      </lottie-player>
+      </div>
       <div className={style.pontuacao}>
         <h3>Sua pontuação:</h3>
-        <p>{correctAnswers} respostas de {numberOfQuestions}.</p>
+        <p>Você acertou <strong>{correctAnswers}</strong> questões do total de {numberOfQuestions}.</p>
       </div>
       <div className={style.tempo}>
       <h3>Seu tempo:</h3>
-      <p>{formatTime(time)}</p>
+      <p>Você levou <strong>{formatTime(time)}</strong> para terminar.</p>
       </div>
       <button onClick={onAnswersCheck}>Checar suas respostas</button>
       <button className={style.reiniciar} onClick={onReset}>

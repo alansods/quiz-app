@@ -52,8 +52,8 @@ export default function Question({
 
   return (
     <div className={style.question}>
-      <div>
-        <span>
+      <div className={style.questaoAtual}>
+        <span >
           Questão {`${activeQuestion + 1}`} de {numberOfQuestions}
         </span>
       </div>
@@ -77,7 +77,7 @@ export default function Question({
         ))}
       </div>
       {error && <div className={style.error}><FaExclamationCircle />{error}</div>}
-      <button onClick={nextClickHandler}>Next</button>
+      <button onClick={nextClickHandler}>Próxima</button>
     </div>
   );
 }
