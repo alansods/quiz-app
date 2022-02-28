@@ -1,0 +1,13 @@
+.headerQuiz{
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: royalblue;
+  color: #fff;
+}

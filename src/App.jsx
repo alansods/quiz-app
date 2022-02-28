@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header'
 import Start from './components/Start'
 import Question from './components/Question';
 import quizDataEasy from './api/quizDataEasy.json'
@@ -7,18 +8,19 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [step, setStep] = useState(1)
-  const [activeQuestion, setActiveQuestion] = useState(0)
+  const [step, setStep] = useState(1) //define qual componente de tela está ativo.
+  const [activeQuestion, setActiveQuestion] = useState(0) //define qual é o número da questão atual.
   const [answers, setAnswers] = useState([])
-  const [userName, setUsername] = useState('')
+  const [userName, setUsername] = useState('') //define o nome do jogador.
 
+  //inicia o quiz ao clicar em começar.
   const quizStartHandler = () => {
     setStep(2)
   }
 
   return (
     <div className="App">
-      <h2>Jogador: {userName}</h2>
+      <Header userName = {userName} />
       {step === 1 && <Start
         onQuizStart={quizStartHandler}
         userName = {userName}

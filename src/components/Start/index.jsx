@@ -1,5 +1,5 @@
 import styles from "./start.module.css";
-import Inputext from '../InputText'
+import UserNameInput from '../UserNameInput'
 
 export default function Start({ onQuizStart, userName, setUsername }) {
   return (
@@ -7,7 +7,7 @@ export default function Start({ onQuizStart, userName, setUsername }) {
       <div className="card-content">
         <div className="content">
           <h2>Qual é seu nome?</h2>
-          <Inputext userName = {userName} setUsername = {setUsername} />
+          <UserNameInput userName = {userName} setUsername = {setUsername} />
           <p>Dificuldade:</p>
           <div className={styles.containerDifficulty}>
             <label className="containerInput">

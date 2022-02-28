@@ -19,6 +19,12 @@
   align-items: center;
 }
 
+@media(max-width:450px){
+  .card{
+    max-width: 90%;
+  }
+}
+
 .card-content{
   width: 100%;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./question.module.css";
+//import style from "./question.module.css";
 
 export default function Question({
   data,

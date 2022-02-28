@@ -1,6 +1,6 @@
 import styles from './inputText.module.css'
 
-export default function Inputext({userName, setUsername}) {
+export default function UserNameInput({userName, setUsername}) {
 
   function createuserName(e){
     setUsername(e.target.value)
