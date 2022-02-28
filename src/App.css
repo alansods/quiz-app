@@ -22,7 +22,7 @@
 
 @media(max-width:450px){
   .card{
-    max-width: 90%;
+    max-width: 95%;
     padding: 20px;
   }
 }
