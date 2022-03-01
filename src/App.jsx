@@ -5,6 +5,7 @@ import Question from "./components/Question"
 import End from "./components/End"
 import Resultado from "./components/Resultado"
 import quizDataEasy from "./api/quizDataEasy.json"
+import quizDataHard from "./api/quizDataHard.json"
  
 
 import React, { useEffect, useState } from "react"
@@ -17,6 +18,8 @@ function App() {
   const [answers, setAnswers] = useState([])
   const [userName, setUsername] = useState("") //define o nome do jogador.
   const [time, setTime] = useState(0)
+  const [easyChecked, setEasyChecked] = useState(false)
+  const [hardChecked, setHardChecked] = useState(false)
 
   useEffect(() => {
     if(step === 3) {
@@ -24,10 +27,22 @@ function App() {
     }
   }, [step])
 
+  useEffect(() => {
+    if(easyChecked) {
+      setHardChecked(false)
+    }
+  }, [easyChecked])
+
+  useEffect(() => {
+    if(hardChecked) {
+      setEasyChecked(false)
+    }
+  }, [hardChecked])
+
   //inicia o quiz ao clicar em começar.
   const quizStartHandler = () => {
 
-    if(userName.length > 2){
+    if(userName.length > 2 && (easyChecked || hardChecked)){
       setStep(2);
 
       interval = setInterval(() => {
@@ -56,25 +71,30 @@ function App() {
                 onQuizStart={quizStartHandler}
                 userName={userName}
                 setUsername={setUsername}
+                easyChecked={easyChecked}
+                setEasyChecked={setEasyChecked}
+                hardChecked={hardChecked}
+                setHardChecked={setHardChecked}
               />
             }
 
             {step === 2 &&
               <Question
-                data={quizDataEasy[activeQuestion]}
+                data={easyChecked ? quizDataEasy[activeQuestion] : quizDataHard[activeQuestion]}
                 onAnswerUpdate={setAnswers}
                 numberOfQuestions={quizDataEasy.length}
                 activeQuestion={activeQuestion}
                 onSetActiveQuestion={setActiveQuestion}
                 onSetStep={setStep}
+                easyChecked={easyChecked}
               />
             }
 
             {step === 3 &&
               <End
               results = {answers}
-              data = {quizDataEasy}
-              numberOfQuestions = {quizDataEasy.length}
+              data = {easyChecked ? quizDataEasy : quizDataHard}
+              numberOfQuestions = {easyChecked ? quizDataEasy.length : quizDataHard.length}
               onReset = {resetClickHandler}
               onAnswersCheck = {() => setStep(4)}
               time = {time}
@@ -82,7 +102,7 @@ function App() {
 
               {step === 4 && <Resultado
               results = {answers}
-              data = {quizDataEasy}
+              data = {easyChecked ? quizDataEasy : quizDataHard}
               onReset = {resetClickHandler}
               />}
           </div>

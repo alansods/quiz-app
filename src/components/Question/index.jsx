@@ -9,6 +9,7 @@ export default function Question({
   activeQuestion,
   onSetActiveQuestion,
   onSetStep,
+  easyChecked,
 }) {
   const [selected, setSelected] = useState("");
   const [error, setError] = useState("");
@@ -26,23 +27,26 @@ export default function Question({
   //transforma obj do quizData em array
   var obj = data.answers;
   var answersArray = Object.entries(obj);
+  console.log("Valor do data.answers: " + answersArray)
 
+  //coloca a resposta clicada no selected
   const changeHandler = (e) => {
     setSelected(e.target.value);
   };
 
+  //ao clicar em proxima
   const nextClickHandler = (e) => {
     if (selected === "") {
       return setError("Responda a questão para continuar.");
+      //impede de avançar caso não selected esteja vazio pq não clicou em nenhuma resposta
     }
-
     if (error) {
       setError("");
     }
 
     onAnswerUpdate((prevState) => [
       ...prevState,
-      { q: data.question, a: selected },
+      { q: data.question, a: selected }, //valor da questao e do value do input selecionado
     ]);
 
     setSelected("");
@@ -58,7 +62,7 @@ export default function Question({
     <div className={style.question}>
       <div className={style.small}>
         <span>
-          Questão {`${activeQuestion + 1}`} de {numberOfQuestions}
+          Questão {`${activeQuestion + 1}`} de {numberOfQuestions} - Nível: {easyChecked ? 'Fácil' : 'Difícil'}
         </span>
       </div>
       <div>
@@ -67,13 +71,14 @@ export default function Question({
       </div>
       <div className="control" ref={radioWrapper}>
         {answersArray.map((answerItem, i) => (
-          <label className="radio" key={i}>
-            {answerItem[1] && (
+          <label htmlFor={i} className="radio" key={i}>
+            {answerItem[1] && ( //se tiver resposta que não seja null aparece
               <div>
                 <input
                   type="radio"
-                  name="answerItem[1]"
-                  value={answerItem[0]}
+                  id={i}
+                  name="itemResposta"
+                  value={answerItem[0]} //valor armazenado da sua resposta no selected
                   onChange={changeHandler}
                   key={i}
                 />
