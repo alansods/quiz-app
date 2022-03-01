@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import style from "./question.module.css";
-import { FaExclamationCircle } from 'react-icons/fa';
+import { FaExclamationCircle } from "react-icons/fa";
 
 export default function Question({
   data,
@@ -23,6 +23,7 @@ export default function Question({
     }
   }, [data]);
 
+  //transforma obj do quizData em array
   var obj = data.answers;
   var answersArray = Object.entries(obj);
 
@@ -39,7 +40,10 @@ export default function Question({
       setError("");
     }
 
-    onAnswerUpdate(prevState => [...prevState,{ q: data.question, a: selected }]);
+    onAnswerUpdate((prevState) => [
+      ...prevState,
+      { q: data.question, a: selected },
+    ]);
 
     setSelected("");
 
@@ -52,12 +56,15 @@ export default function Question({
 
   return (
     <div className={style.question}>
-      <div className={style.questaoAtual}>
-        <span >
+      <div className={style.small}>
+        <span>
           Questão {`${activeQuestion + 1}`} de {numberOfQuestions}
         </span>
       </div>
-      <h2>{data.question}</h2>
+      <div>
+        <h2>{data.question}</h2>
+        <span className={style.tag}>Tag: {data.tags[0].name}</span>
+      </div>
       <div className="control" ref={radioWrapper}>
         {answersArray.map((answerItem, i) => (
           <label className="radio" key={i}>
@@ -70,13 +77,19 @@ export default function Question({
                   onChange={changeHandler}
                   key={i}
                 />
-                {`${1 + i}) ${answerItem[1]}`}
+                <strong>{1 + i}) </strong>
+                {answerItem[1]}
               </div>
             )}
           </label>
         ))}
       </div>
-      {error && <div className={style.error}><FaExclamationCircle />{error}</div>}
+      {error && (
+        <div className={style.error}>
+          <FaExclamationCircle />
+          {error}
+        </div>
+      )}
       <button onClick={nextClickHandler}>Próxima</button>
     </div>
   );

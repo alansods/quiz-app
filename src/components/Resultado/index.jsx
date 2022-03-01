@@ -12,6 +12,7 @@ export default function Resultado({ results, onReset, data }) {
             </p>
             <p>Sua resposta foi: {result.a}</p>
             <p>A resposta correta é: {data[i].correct_answer}</p>
+            {data[i].correct_answer === result.a ? <p className={style.correct}>Parabéns! Você acertou essa questão.</p> : <p className={style.incorrect}>Que pena! Você errou está questão.</p>}
           </li>
         ))}
       </ul>

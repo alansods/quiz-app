@@ -7,3 +7,21 @@
 .resultado li{
   margin: 20px 0
 }
+
+.correct{
+  color: #fff;
+  background-color: limegreen;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin: 5px 0;
+  font-size: .9rem;
+}
+
+.incorrect{
+  color: #fff;
+  background-color: crimson;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin: 5px 0;
+  font-size: .9rem;
+}

@@ -4,8 +4,13 @@
   gap: 20px;
 }
 
-.questaoAtual{
+.small{
   font-size: .8rem;
+}
+
+.tag{
+  font-size: .7rem;
+  color: #ccc;
 }
 
 .error {

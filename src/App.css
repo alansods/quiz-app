@@ -49,8 +49,10 @@
 }
 
 .radio{
-  margin-top: 8px;
+  margin-top: 4px;
+  padding: 5px 0;
 }
+
 
 .radio input{
   margin-right: 5px;
