@@ -56,7 +56,7 @@ export default function End({
     <motion.div
       initial="hidden"
       animate="visible"
-      transition={{ type: "spring", duration: 0.6 }}
+      transition={{ type: "spring", duration: 0.5 }}
       variants={variants}
     >
       <div className="card">
