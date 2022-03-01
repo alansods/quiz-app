@@ -57,6 +57,8 @@ function App() {
     setStep(1)
     setTime(0)
     setUsername('')
+    setEasyChecked(false)
+    setHardChecked(false)
   }
 
   return (
