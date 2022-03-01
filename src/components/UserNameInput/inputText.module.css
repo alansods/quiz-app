@@ -11,4 +11,5 @@
 
 .container input:focus{
   outline: solid 3px royalblue;
+  border-radius: 4px;
 }

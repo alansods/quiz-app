@@ -51,7 +51,7 @@ export default function End({
         {correctAnswers > 6 && (
           <div>
             <Lottie options={defaultOptionsHappy} height={110} width={110} />
-            <p className={style.good}>Parabéns! Você foi muito bem.</p>
+            <p className={style.good}>Parabéns! Você foi muito bem, continue assim.</p>
           </div>
         )}
         {correctAnswers < 7 && (
