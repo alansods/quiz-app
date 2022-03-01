@@ -8,15 +8,15 @@ export default function Start({ onQuizStart, userName, setUsername, easyChecked,
       <UserNameInput userName={userName} setUsername={setUsername} onQuizStart={onQuizStart} />
       <h3>Dificuldade:</h3>
       <div className={style.containerDifficulty}>
-        <label className="containerInput">
+        <label htmlFor="checkbox1" className="containerInput">
           <span className={style.dificultyName}>Fácil</span>
-          <input type="checkbox" checked={easyChecked} value="facil" onChange={()=> setEasyChecked(!easyChecked)} />
+          <input id="checkbox1" tabindex="0" type="checkbox" checked={easyChecked} value="facil" onChange={()=> setEasyChecked(!easyChecked)} />
           <span className="checkmark"></span>
         </label>
 
-        <label className="containerInput">
+        <label htmlFor="checkbox2" className="containerInput">
           <span className={style.dificultyName}>Difícil</span>
-          <input type="checkbox" checked={hardChecked} value="dificil" onChange={()=> setHardChecked(!hardChecked)} />
+          <input id="checkbox2" tabindex="0" type="checkbox" checked={hardChecked} value="dificil" onChange={()=> setHardChecked(!hardChecked)} />
           <span className="checkmark"></span>
         </label>
 
