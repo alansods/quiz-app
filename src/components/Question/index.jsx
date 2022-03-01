@@ -63,7 +63,7 @@ export default function Question({
       </div>
       <div>
         <h2>{data.question}</h2>
-        <span className={style.tag}>Tema: {data.tags[0].name}</span>
+        <span className={style.tag}>Tag: {data.tags[0].name}</span>
       </div>
       <div className="control" ref={radioWrapper}>
         {answersArray.map((answerItem, i) => (

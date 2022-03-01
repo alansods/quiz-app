@@ -1,13 +1,31 @@
 .end {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .reiniciar{
+  margin-top: 10px;
   background-color: crimson;
 }
 
 .reiniciar:hover{
   background-color: rgb(252, 48, 89);
+}
+
+.good{
+  text-align: center;
+  color: limegreen;
+  padding: 5px 10px;
+  border: solid 1px limegreen;
+  border-radius: 4px;
+}
+
+.bad{
+  margin-top: 12px;
+  text-align: center;
+  color: crimson;
+  padding: 5px 10px;
+  border: solid 1px crimson;
+  border-radius: 4px;
 }
