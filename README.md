@@ -1,7 +1,5 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Live Preview
 
 <a href="https://quiz-app-coral.vercel.app/">https://quiz-app-coral.vercel.app/</a>
