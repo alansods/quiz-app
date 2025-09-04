@@ -1,79 +1,77 @@
-# Quiz app
-
-## Live Preview
-
-<a href="https://quiz-app-coral.vercel.app/">https://quiz-app-coral.vercel.app/</a>
 # Quiz App
 
-Um aplicativo de quiz interativo construído com React, apresentando animações fluidas e uma interface moderna.
+## Live Preview
+<a href="https://quiz-app-coral.vercel.app/">https://quiz-app-coral.vercel.app/</a>
 
-## 🚀 Funcionalidades
+An interactive quiz application built with React, featuring smooth animations and a modern interface.
 
-- Interface interativa e responsiva
-- Animações suaves com Framer Motion
-- Ícones modernos com React Icons
-- Animações Lottie para feedback visual
-- Design limpo e intuitivo
+## 🚀 Features
 
-## 🛠️ Tecnologias Utilizadas
+- Interactive and responsive interface
+- Smooth animations with Framer Motion
+- Modern icons with React Icons
+- Lottie animations for visual feedback
+- Clean and intuitive design
 
-- **React** 17.0.2 - Biblioteca para construção da interface
-- **Framer Motion** - Animações e transições
-- **React Icons** - Biblioteca de ícones
-- **React Lottie** - Animações Lottie
-- **CSS3** - Estilização personalizada
+## 🛠️ Technologies Used
 
-## 📋 Pré-requisitos
+- **React** 17.0.2 - Library for building user interfaces
+- **Framer Motion** - Animations and transitions
+- **React Icons** - Icon library
+- **React Lottie** - Lottie animations
+- **CSS3** - Custom styling
 
-Antes de começar, certifique-se de ter instalado em sua máquina:
+## 📋 Prerequisites
 
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+Before getting started, make sure you have installed on your machine:
 
-## 🔧 Instalação
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-1. Clone o repositório:
+## 🔧 Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/quiz-app.git
+git clone https://github.com/your-username/quiz-app.git
 ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
 ```bash
 cd quiz-app
 ```
 
-3. Instale as dependências:
+3. Install dependencies:
 ```bash
 npm install
-# ou
+# or
 yarn install
 ```
 
-## 🚀 Como executar
+## 🚀 Running the Application
 
-Para executar o projeto em modo de desenvolvimento:
+To run the project in development mode:
 
 ```bash
 npm start
-# ou
+# or
 yarn start
 ```
 
-O aplicativo será aberto em [http://localhost:3000](http://localhost:3000) no seu navegador.
+The app will open at [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📦 Build para produção
+## 📦 Production Build
 
-Para criar uma build otimizada para produção:
+To create an optimized production build:
 
 ```bash
 npm run build
-# ou
+# or
 yarn build
 ```
 
-Os arquivos otimizados serão gerados na pasta `build/`.
+The optimized files will be generated in the `build/` folder.
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 quiz-app/
@@ -88,9 +86,10 @@ quiz-app/
 └── README.md
 ```
 
-## 🎮 Como Jogar
+## 🎮 How to Play
 
-1. Acesse a aplicação
-2. Clique em "Iniciar Quiz"
-3. Responda às perguntas selecionando uma das opções
-4. Veja seu resultado final com animações interativas
+1. Access the application
+2. Click on "Start Quiz"
+3. Answer the questions by selecting one of the options
+4. View your final result with interactive animations
+⭐️ If this project was useful to you, don't forget to give it a star!
